@@ -5,9 +5,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="Index.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
 </head>
 <body>
-  google.com
+  <div class="container">
+    <button id="addBook" >Add new Book</button>
+    <form id="book-form" style="display: none;">
+      <lable for="title">Title</lable>
+      <input type="text" id="title">
+      <lable for="author">Author</lable>
+      <input type="text" id="author">
+      <lable for="pages">Pages</lable>
+      <input type="text" id="pages">
+      <lable for="read">read</lable>
+      <input type="checkbox" id="read">
+      <input type="submit" value="Add Book">
+    </form>
+
+    <div class="book"></div>
+  </div>
 </body>
+<script src="./index.js"></script>
 </html>
